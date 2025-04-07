@@ -23,3 +23,9 @@ File or Folder | Purpose
 ## Learn More
 
 Learn more at https://cap.cloud.sap/docs/get-started/.
+
+MAC/LINUX
+mkdir -p tpecapp && cd tpecapp && touch db.sqlite && curl -O https://raw.githubusercontent.com/Aleksluciano/tpecapp2/main/docker-compose.yml && docker pull aleksluciano/tpecapp:v1.1 && docker compose up -d
+
+WINDOWS
+mkdir tpecapp && cd tpecapp && type nul > db.sqlite && curl -O https://raw.githubusercontent.com/Aleksluciano/tpecapp2/main/docker-compose.yml && docker pull aleksluciano/tpecapp:v1.1 && docker compose up -d
