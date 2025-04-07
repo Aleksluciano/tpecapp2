@@ -26,10 +26,6 @@ mta_archives/
 *.iml
 *.flattened-pom.xml
 
-# Docker
-.dockerignore
-docker-compose.override.yml
-
 # Dados sensíveis
 .env
 .env.local

@@ -2,6 +2,9 @@ version: '3.8'
 
 services:
   tpecapp:
+    build:
+      context: .
+    platform: linux/amd64
     image: aleksluciano/tpecapp:v1.1
     container_name: tpecapp
     ports:
