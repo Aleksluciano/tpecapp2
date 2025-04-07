@@ -5,7 +5,7 @@ services:
     build:
       context: .
     platform: linux/amd64
-    image: aleksluciano/tpecapp:v1.0
+    image: aleksluciano/tpecapp:v1.1
     container_name: tpecapp
     ports:
       - "4004:4004"
