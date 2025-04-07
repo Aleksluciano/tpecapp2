@@ -1,0 +1,58 @@
+{
+  "name": "tpecapp2",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js/sqlite": "^1.10.0",
+    "@sap/cds": "^8",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.10.0",
+    "@sap/cds-dk": "^8.9.1"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-project1": "cds watch --open project1/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-project2": "cds watch --open project2/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-points": "cds watch --open points/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-periods": "cds watch --open periods/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-weeks": "cds watch --open weeks/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-daysofweek": "cds watch --open daysofweek/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-schedules": "cds watch --open schedules/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-reports": "cds watch --open reports/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-users": "cds watch --open users/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "sapux": [
+    "app/project1",
+    "app/project2",
+    "app/project1",
+    "app/project1",
+    "app/project2",
+    "app/points",
+    "app/periods",
+    "app/periods",
+    "app/weeks",
+    "app/daysofweek",
+    "app/schedules",
+    "app/reports",
+    "app/users",
+    "app/users",
+    "app/weeks",
+    "app/schedules",
+    "app/reports"
+  ],
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "url": "db.sqlite"
+        }
+      }
+    }
+  }
+}
